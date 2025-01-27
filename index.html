@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="scorecard" aria-labelledby="player1-name">
+        <h2 class="player-name">Regina</h2>
+        <div class="score-display">
+          <h3 id="regina-score" aria-live="polite">0</h3>
+        </div>
+        <div class="controls">
+          <button onclick="updateScore('regina-score', 1)">+1</button>
+          <button onclick="updateScore('regina-score', 2)">+2</button>
+          <button onclick="updateScore('regina-score', 3)">+3</button>
+        </div>
+      </div>
+
+      <div class="scorecard" aria-labelledby="player2-name">
+        <h2 class="player-name">Cady</h2>
+        <div class="score-display">
+          <h3 id="cady-score" aria-live="polite">0</h3>
+        </div>
+        <div class="controls">
+          <button onclick="updateScore('cady-score', 1)">+1</button>
+          <button onclick="updateScore('cady-score', 2)">+2</button>
+          <button onclick="updateScore('cady-score', 3)">+3</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

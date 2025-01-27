@@ -1,0 +1,137 @@
+/* 0. TO DO: Root properties
+*/
+
+:root {
+  --primary-color: #eb2765;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: url(cute-pink-background-d8ijd9dn994yayv4.jpg); */
+}
+
+.container {
+  width: 575px;
+  height: 385px;
+  background: #fcc3e4;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(246, 2, 79, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 85px;
+}
+
+.scorecard {
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.player-name {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.score-display {
+  width: 155px;
+  height: 120px;
+  background: #f5f0f0;
+  padding: 20px 40px;
+  border-radius: 5px;
+  font-size: 5.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px var(--primary-color);;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  border: 2px solid var(--primary-color);;
+  color: inherit;
+  border-radius: 5px;
+  background: none;
+  width: 45px;
+  height: 45px;
+}
